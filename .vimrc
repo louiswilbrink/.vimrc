@@ -34,10 +34,13 @@ set scrolloff=3
 set ruler
 " Mark the 80th character to follow width limits.
 set colorcolumn=80
-" See relative line numbers
+" See relative line numbers.
 set relativenumber
 " Toggle -- INSERT (Paste) --
 set pastetoggle=<F2>
+" When searching for a string, ignore case.
+set ignorecase
+
 
 " Easier moving in tabs and windows
 vmap <C-c> "+yi
