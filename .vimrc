@@ -51,7 +51,7 @@ imap <C-v> <ESC>"+pa
 
 " CtrlP: Don't search these folders.
 let g:ctrlp_custom_ignore = {
-  \ 'dir': 'node_modules\|DS_Store\|git\|target' }
+  \ 'dir': 'node_modules\|DS_Store\|git\|target\|platform\|plugins' }
 
 " THEME
 set t_Co=256
