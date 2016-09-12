@@ -8,6 +8,7 @@ Plugin 'mustache/vim-mustache-handlebars'
 Bundle 'kien/ctrlp.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'mileszs/ack.vim'
 Bundle 'groenewege/vim-less'
@@ -37,10 +38,13 @@ set ruler
 set colorcolumn=80
 " See relative line numbers.
 set relativenumber
+" Show current line number on cursor line.
+set number
 " Toggle -- INSERT (Paste) --
 set pastetoggle=<F2>
 " When searching for a string, ignore case.
 set ignorecase
+set clipboard=unnamed
 
 
 " Easier moving in tabs and windows
