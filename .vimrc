@@ -46,6 +46,8 @@ set pastetoggle=<F2>
 set ignorecase
 set clipboard=unnamed
 
+" Enter normal mode using jk
+imap jk <ESC>
 
 " Easier moving in tabs and windows
 vmap <C-c> "+yi
