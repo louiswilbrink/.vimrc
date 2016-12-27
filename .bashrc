@@ -40,7 +40,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -112,16 +112,5 @@ function hgr() {
   history | grep "$*"
 }
 
-alias ml='mysql language'
 alias ..="cd .."
 alias ....="cd ../.."
-
-alias sshweb='ssh -i dev.pem ec2-user@54.149.172.28'
-alias sshapi='ssh -i dev.pem ec2-user@54.148.43.146'
-
-export PATH=/usr/local/share/npm/bin:$PATH
-
-export NVM_DIR="/Users/louiswilbrink/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
