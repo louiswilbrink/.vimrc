@@ -12,8 +12,12 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'mileszs/ack.vim'
 Bundle 'groenewege/vim-less'
+" Jade syntax highlighting.
 Bundle 'digitaltoad/vim-jade'
+" Scala syntax highlighting.
 Plugin 'derekwyatt/vim-scala'
+" JavaScript syntax highlighting (including ES2015).
+Plugin 'pangloss/vim-javascript'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
