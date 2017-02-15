@@ -18,6 +18,9 @@ Bundle 'digitaltoad/vim-jade'
 Plugin 'derekwyatt/vim-scala'
 " JavaScript syntax highlighting (including ES2015).
 Plugin 'pangloss/vim-javascript'
+" TypeScript syntax hightlighting.
+Plugin 'leafgarland/typescript-vim'
+Plugin 'HerringtonDarkholme/yats.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
