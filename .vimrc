@@ -53,6 +53,9 @@ set pastetoggle=<F2>
 set ignorecase
 set clipboard=unnamed
 
+" Keep swap files in .vim -- avoid cluttering codebase.
+set dir=~/.vim
+
 " Enter normal mode using jk
 imap jk <ESC>
 
