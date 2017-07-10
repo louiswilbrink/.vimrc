@@ -118,3 +118,6 @@ function hgr() {
 
 alias ..="cd .."
 alias ....="cd ../.."
+
+# Git aliases.
+alias gsl="git stash list"
