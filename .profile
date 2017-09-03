@@ -3,5 +3,6 @@ export NVM_DIR="/Users/louiswilbrink/.nvm"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH=/usr/local/share/npm/bin:$PATH
+export PATH=~/Library/Python/3.6/bin:$PATH
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
