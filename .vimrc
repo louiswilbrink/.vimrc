@@ -58,6 +58,7 @@ set dir=~/.vim
 
 " Enter normal mode using jk
 imap jk <ESC>
+imap fd <ESC>
 
 " Easier moving in tabs and windows
 vmap <C-c> "+yi
@@ -79,14 +80,6 @@ colorscheme solarized
 
 au BufNewFile,BufRead *.ejs set filetype=html
 
-" var_dump
-imap vrr var_dump(
-imap {{{ {%
-imap }}} %}
-imap <<< <?php
-imap >>> ?>
-imap clog console.log(
-
 " Easier moving in tabs and windows
 map <C-J> <C-W>j
 map <C-K> <C-W>k
@@ -99,24 +92,6 @@ map <F11> <C-W>_<C-W><Bar>
 " Make all panes the same size.
 map <F12> <C-W>=
 
-" ALIASES
-imap bgc background-color: 
-imap bgi background-image: 
-imap bgp background-position: 
-
-imap ffam font-family: 
-imap fsiz font-size: 
-imap lnh line-height: 
-imap lsp letter-spacing: 
-imap mtt margin-top: 
-imap mbb margin-bottom: 
-imap mll margin-left: 
-imap mrr margin-right: 
-imap pll padding-left: 
-imap prr padding-right: 
-imap ptt padding-top:
-imap pbb padding-bottom: 
-
 function! s:DiffWithSaved()
   let filetype=&ft
   diffthis
@@ -124,4 +99,7 @@ function! s:DiffWithSaved()
   diffthis
   exe "setlocal bt=nofile bh=wipe nobl noswf ro ft=" . filetype
 endfunction
+
 com! DiffSaved call s:DiffWithSaved()
+
+set clipboard=unnamed
