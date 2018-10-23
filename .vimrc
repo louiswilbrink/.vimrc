@@ -2,25 +2,37 @@
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" let Vundle manage Vundle, required
+" *** VUNDLE ***
 Plugin 'gmarik/Vundle.vim'
-Plugin 'mustache/vim-mustache-handlebars'
+
+" Search
 Bundle 'kien/ctrlp.vim'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/nerdcommenter'
 Bundle 'mileszs/ack.vim'
+
+" Syntax highlighting.
+Bundle 'digitaltoad/vim-pug'
 Bundle 'groenewege/vim-less'
-" Jade syntax highlighting.
-Bundle 'digitaltoad/vim-jade'
-" Scala syntax highlighting.
+Bundle 'altercation/vim-colors-solarized'
 Plugin 'derekwyatt/vim-scala'
-" JavaScript syntax highlighting (including ES2015).
-Plugin 'pangloss/vim-javascript'
-" TypeScript syntax hightlighting.
 Plugin 'leafgarland/typescript-vim'
 Plugin 'HerringtonDarkholme/yats.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mustache/vim-mustache-handlebars'
+
+" Functionality
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-fugitive'
+
+" File Exploration
+Bundle 'scrooloose/nerdtree'
+
+" Miscellaneous
+Bundle 'scrooloose/nerdcommenter'
+
+" .NET development
+Bundle 'omnisharp/omnisharp-vim'
+Bundle 'vim-syntastic/syntastic'
+Bundle 'tpope/vim-dispatch'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -85,7 +97,6 @@ map <C-J> <C-W>j
 map <C-K> <C-W>k
 map <C-L> <C-W>l
 map <C-H> <C-W>h
-
 
 " Full screen the current pane.
 map <F11> <C-W>_<C-W><Bar>
