@@ -119,7 +119,11 @@ function hgr() {
 alias ..="cd .."
 alias ....="cd ../.."
 
-export NVM_DIR="$INSTALL_DIR"
+# Expected error:
+# You have $NVM_DIR set to "/Users/louiswilbrink/.nvm", but that directory does not exist. Check your profile files and environment.
+# Fix:
+# Restart terminal.
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
