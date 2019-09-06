@@ -131,3 +131,7 @@ git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.st status
 
+# Xcode installation
+if ! xcode-select -v >/dev/null ; then
+    xcode-select --install
+fi

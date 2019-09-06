@@ -20,7 +20,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " * Search *
 Bundle 'kien/ctrlp.vim'
-Bundle 'mileszs/ack.vim'
+Plugin 'mileszs/ack.vim'
 
 " * Syntax highlighting *
 Bundle 'digitaltoad/vim-pug'
@@ -35,17 +35,6 @@ Plugin 'mustache/vim-mustache-handlebars'
 " * Functionality *
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
-
-" * File Exploration *
-Bundle 'scrooloose/nerdtree'
-
-" * Miscellaneous *
-Bundle 'scrooloose/nerdcommenter'
-
-" * .NET development *
-Bundle 'omnisharp/omnisharp-vim'
-Bundle 'vim-syntastic/syntastic'
-Bundle 'tpope/vim-dispatch'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
