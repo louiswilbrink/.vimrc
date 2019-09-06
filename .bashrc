@@ -139,10 +139,16 @@ fi
 # Homebrew check & installation
 if ! brew -v >/dev/null ; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+  # Creates directories and privileges suggested by Homebrew.
+  sudo mkdir -p /usr/local/include /usr/local/lib /usr/local/opt /usr/local/sbin /usr/local/Cellar
+  sudo chown -R $(whoami) /usr/local/include /usr/local/lib /usr/local/opt /usr/local/sbin /usr/local/Cellar
+  
+  # Update & heal.
   brew update
   brew doctor
 
   # Once Homebrew is installed, install ack.& git.
-  # brew install ack
-  # brew install git
+  brew install ack
+  brew install git
 fi
