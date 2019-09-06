@@ -131,7 +131,18 @@ git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.st status
 
-# Xcode installation
+# Xcode check & installation
 if ! xcode-select -v >/dev/null ; then
     xcode-select --install
+fi
+
+# Homebrew check & installation
+if ! brew -v >/dev/null ; then
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  brew update
+  brew doctor
+
+  # Once Homebrew is installed, install ack.& git.
+  # brew install ack
+  # brew install git
 fi
