@@ -133,7 +133,7 @@ git config --global alias.st status
 
 # Xcode check & installation
 if ! xcode-select -v >/dev/null ; then
-    xcode-select --install
+  xcode-select --install
 fi
 
 # Homebrew check & installation
