@@ -131,7 +131,10 @@ git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.st status
 
-# Xcode check & installation
+# Xcode check & installation.
 if ! xcode-select -v >/dev/null ; then
   xcode-select --install
 fi
+
+# Use vim bindings in bash.
+set -o vi
