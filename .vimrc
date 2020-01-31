@@ -1,28 +1,15 @@
 " *** VUNDLE ***
-
-" * Install Vundle *
-" $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-" $ vim .
-" :PluginInstall
-" :BundleInstall
-
-" * Brief help *
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-
-" Set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-" * Search *
+" Search
 Bundle 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 
-" * Syntax highlighting *
+" Syntax highlighting
 Bundle 'digitaltoad/vim-pug'
 Bundle 'groenewege/vim-less'
 Bundle 'altercation/vim-colors-solarized'
@@ -31,15 +18,15 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'HerringtonDarkholme/yats.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'mtdl9/vim-log-highlighting'
+Plugin 'stephpy/vim-yaml'
 
-" * Functionality *
+" Functionality
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
-
-" *** /VUNDLE ***
 
 " *** SETTINGS ***
 
@@ -54,7 +41,7 @@ set shiftwidth=2
 set expandtab
 set smartindent
 set hlsearch
-set clipboard=unnamed
+set clipboard^=unnamed,unnamedplus "Yank to clipboard.
 set scrolloff=3            " Keep three lines between the cursor and the top/bottom of the window.
 set ruler                  " Display current cursor position in bottom right corner.
 set colorcolumn=80         " Mark the 80th character to follow width limits.
