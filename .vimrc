@@ -1,4 +1,18 @@
 " *** VUNDLE ***
+"
+" * Install Vundle *
+" $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" $ vim .
+" :PluginInstall
+" :BundleInstall
+
+" * Brief help *
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+
+" Set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
@@ -27,6 +41,8 @@ Bundle 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
+
+" *** /VUNDLE ***
 
 " *** SETTINGS ***
 
@@ -61,20 +77,31 @@ let g:ctrlp_custom_ignore =
   \   'dir': 'node_modules\|DS_Store\|git\|target\|platform\|plugins' 
   \ }                      " CtrlP: Don't search these folders.
 
-imap jk <ESC>              " Enter normal mode using jk.
-imap fd <ESC>              " Enter normal mode using fd.
+" Enter visual mode.
+inoremap jk <ESC>
+inoremap jj <ESC>
+inoremap jf <ESC>
+inoremap fd <ESC>
 
-vmap <C-c> "+yi            " Easier moving in tabs and windows.
-vmap <C-x> "+c             " Easier moving in tabs and windows.
-vmap <C-v> c<ESC>"+p       " Easier moving in tabs and windows.
-imap <C-v> <ESC>"+pa       " Easier moving in tabs and windows.
+" Easier moving in tabs and windows.
+vmap <C-c> "+yi
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <ESC>"+pa
 
-map <C-J> <C-W>j           " Easier moving in tabs and windows.
-map <C-K> <C-W>k           " Easier moving in tabs and windows.
-map <C-L> <C-W>l           " Easier moving in tabs and windows.
-map <C-H> <C-W>h           " Easier moving in tabs and windows.
-map <F11> <C-W>_<C-W><Bar> " Full screen the current pane.
-map <F12> <C-W>=           " Make all panes the same size.
+" Easier moving in tabs and windows.
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-L> <C-W>l
+map <C-H> <C-W>h
+
+" Fullscreen current pane.
+map <F11> <C-W>_<C-W><Bar>
+map <C-m> <C-W>_<C-W><Bar>
+
+" Evenly distribute all panes.
+map <F12> <C-W>=
+map <C-n> <C-W>=
 
 syntax enable              " Enable syntax highlighting.
 colorscheme solarized      " Use solarized colorscheme.
