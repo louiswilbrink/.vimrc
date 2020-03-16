@@ -34,6 +34,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'mtdl9/vim-log-highlighting'
 Plugin 'stephpy/vim-yaml'
+Plugin 'preservim/nerdcommenter'
 
 " Functionality
 Bundle 'tpope/vim-surround'
