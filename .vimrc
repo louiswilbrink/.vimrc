@@ -19,6 +19,9 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
+" UltiSnips
+Plugin 'SirVer/ultisnips'
+
 " Search
 Bundle 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
@@ -70,6 +73,14 @@ set dir=~/.vim             " Keep swap files in .vim -- avoid cluttering codebas
 set t_Co=256               " Set theme color.
 set background=dark        " Set theme background.
 
+" UltiSnips Settings
+" Trigger configuration.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
 let g:solarized_termcolors = 256
 let g:netrw_bufsettings = 
   \ 'noma nomod nu nobl nowrap ro'
@@ -97,12 +108,10 @@ map <C-L> <C-W>l
 map <C-H> <C-W>h
 
 " Fullscreen current pane.
-map <F11> <C-W>_<C-W><Bar>
-map <C-m> <C-W>_<C-W><Bar>
+map <C-n> <C-W>_<C-W><Bar>
 
 " Evenly distribute all panes.
-map <F12> <C-W>=
-map <C-n> <C-W>=
+map <C-b> <C-W>=
 
 syntax enable              " Enable syntax highlighting.
 colorscheme solarized      " Use solarized colorscheme.
