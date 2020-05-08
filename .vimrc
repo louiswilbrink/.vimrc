@@ -43,6 +43,9 @@ Plugin 'preservim/nerdcommenter'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 
+" Debug
+Plugin 'vim-vdebug/vdebug'
+
 " All of your Plugins must be added before the following line
 call vundle#end()
 
