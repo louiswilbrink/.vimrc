@@ -87,10 +87,22 @@ let g:UltiSnipsEditSplit="vertical"
 let g:solarized_termcolors = 256
 let g:netrw_bufsettings = 
   \ 'noma nomod nu nobl nowrap ro'
+
+" CtrlP settings.
 let g:ctrlp_custom_ignore = 
   \ { 
   \   'dir': 'node_modules\|DS_Store\|git\|target\|platform\|plugins' 
   \ }                      " CtrlP: Don't search these folders.
+
+" Vdebug settings.
+if !exists('g:vdebug_options')
+  let g:vdebug_options = {}
+endif
+
+let g:vdebug_options['server'] = '10.0.0.149'
+let g:vdebug_options['port'] = 9090
+let g:vdebug_options['idekey'] = 'netbeans-xdebug'
+let g:vdebug_options['path_maps'] = { '/Users/louis.wilbrink/System1/developer.mapquest.com': '/var/www/html' }
 
 " Enter visual mode.
 inoremap jk <ESC>
