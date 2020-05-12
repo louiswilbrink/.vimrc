@@ -101,8 +101,8 @@ endif
 
 let g:vdebug_options['server'] = '10.0.0.149'
 let g:vdebug_options['port'] = 9090
-let g:vdebug_options['idekey'] = 'netbeans-xdebug'
-let g:vdebug_options['path_maps'] = { '/Users/louis.wilbrink/System1/developer.mapquest.com': '/var/www/html' }
+let g:vdebug_options['ide_key'] = 'vdebug'
+let g:vdebug_options['path_maps'] = { '/var/www/html': '/Users/louis.wilbrink/System1/developer.mapquest.com' }
 
 " Enter visual mode.
 inoremap jk <ESC>
