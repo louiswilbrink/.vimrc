@@ -125,8 +125,15 @@ map <C-H> <C-W>h
 " Fullscreen current pane.
 map <C-n> <C-W>_<C-W><Bar>
 
+
 " Evenly distribute all panes.
 map <C-b> <C-W>=
+
+" Resize panes.
+map <C-I> :res -2<CR>
+map <C-O> :res +2<CR>
+map <C-T> :vertical resize -2<CR>
+map <C-Y> :vertical resize +2<CR>
 
 syntax enable              " Enable syntax highlighting.
 colorscheme solarized      " Use solarized colorscheme.
